@@ -1,0 +1,41 @@
+- type: JS
+  question: What is a closure?
+  answer: A closure is the combination of a function and the lexical environment within which that function was declared.
+  example: |
+    function makeCounter() {
+      let count = 0;
+      return function() {
+        return count++;
+      };
+    }
+    let counter = makeCounter();
+    console.log(counter()); // 0
+    console.log(counter()); // 1
+
+- type: TypeScript
+  question: What is TypeScript?
+  answer: TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+  example: |
+    let isDone: boolean = false;
+    let decimal: number = 6;
+    let color: string = "blue";
+
+- type: TypeScript
+  question: How to use Type Guards in TypeScript ?
+  answer: |
+    Type Guards are a TypeScript feature that allows developers to narrow down the type of a variable within a conditional block. They are particularly useful when dealing with union types or when the type of a variable cannot be determined by TypeScript’s static analysis alone.
+  example: |
+    let isDone: boolean = false;
+    let decimal: number = 6;
+    let color: string = "blue";
+
+
+- type: Java
+  question: What is the JDK?
+  answer: The JDK (Java Development Kit) is a software development environment used for developing Java applications.
+  example: |
+    public class Main {
+      public static void main(String[] args) {
+        System.out.println("Hello, World!");
+      }
+    }
